@@ -1,4 +1,4 @@
-# PlumeFlux Workspace
+# MailFlow
 
 Suite d'outils de gestion de flux de travail.
 

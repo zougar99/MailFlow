@@ -1,8 +1,8 @@
 {
-  "name": "plume-flux-workspace",
+  "name": "mailflow",
   "version": "0.1.0",
   "private": true,
-  "description": "Studio PlumeFlux (web) + Email Control (email-app) — une seule install à la racine.",
+  "description": "MailFlow — Email Control (email-app) + Studio (web)",
   "workspaces": [
     "web",
     "email-app"

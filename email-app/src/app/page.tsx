@@ -17,7 +17,7 @@ export default function Home() {
     <div className="mx-auto w-full max-w-3xl px-4 py-10 md:px-6">
       <header className="border-b border-[var(--stroke)] pb-8">
         <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-[var(--muted)]">
-          Suite PlumeFlux · app courriel dédiée
+          Suite MailFlow · app courriel dédiée
         </p>
         <h1 className="font-display mt-2 text-3xl font-semibold tracking-tight text-[var(--ink)]">
           Email Control
