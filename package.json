@@ -1,0 +1,30 @@
+{
+  "name": "plume-flux-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Studio PlumeFlux (web) + Email Control (email-app) — une seule install à la racine.",
+  "workspaces": [
+    "web",
+    "email-app"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w plume-flux",
+    "dev:studio": "npm run dev -w plume-flux",
+    "dev:email": "npm run dev -w email-control",
+    "dev:all": "concurrently -n studio,email -c blue,magenta \"npm run dev -w plume-flux\" \"npm run dev -w email-control\"",
+    "build": "npm run build -w plume-flux && npm run build -w email-control",
+    "build:studio": "npm run build -w plume-flux",
+    "build:email": "npm run build -w email-control",
+    "start:studio": "npm run start -w plume-flux",
+    "start:email": "npm run start -w email-control",
+    "lint": "npm run lint -w plume-flux && npm run lint -w email-control",
+    "lint:studio": "npm run lint -w plume-flux",
+    "lint:email": "npm run lint -w email-control"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
