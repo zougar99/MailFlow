@@ -1,46 +1,21 @@
 # 📧 MailFlow
 
-Suite d'outils de gestion de flux de travail.
+> Email Control — Connexion Gmail/Outlook + analyse IA + labels automatiques
 
-## Structure
+## ✨ Features
 
-```
-/
-├── email-app/        # Email Control — connexion Gmail/Outlook + analyse IA
-├── email/            # (préparé pour usage futur)
-├── package.json      # Workspace root (npm workspaces)
-└── README.md
-```
+- Core functionality as described above
+- Built with modern technologies
+- Easy to set up and use
 
-## Démarrer
+## 💻 Installation
 
 ```bash
-npm install
-
-# Lancer l'app Email Control seulement
-npm run dev:email
-
-# Lancer les deux apps (quand le workspace web/ sera présent)
-npm run dev:all
+git clone https://github.com/zougar99/MailFlow.git
+cd MailFlow
 ```
 
-L'app Email Control tourne sur **http://localhost:3001** par défaut.
+## ℹ️ About
 
-## Apps
-
-### Email Control
-
-Application Next.js pour connecter Gmail et Outlook, scanner les boîtes de réception, analyser les messages avec l'IA, et appliquer automatiquement des libellés/catégories.
-
-- OAuth Gmail + Microsoft Graph
-- Analyse IA des messages en lots
-- Application automatique de labels (Gmail) / catégories (Outlook)
-- File d'attente locale (localStorage)
-
-## Configuration
-
-Copier `.env.example` vers `.env.local` dans `email-app/` et remplir :
-- `EMAIL_OAUTH_SECRET` — clé de chiffrement des sessions OAuth
-- `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` — identifiants Gmail API
-- `MICROSOFT_CLIENT_ID` / `MICROSOFT_CLIENT_SECRET` — identifiants Microsoft Graph
-- Variables IA : `AI_BASE_URL`, `AI_API_KEY`, `AI_MODEL`
+Part of the [zougar99](https://github.com/zougar99) project portfolio.
+Built with ❤️
