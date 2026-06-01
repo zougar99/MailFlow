@@ -1,4 +1,4 @@
-# MailFlow
+# 📧 MailFlow
 
 Suite d'outils de gestion de flux de travail.
 
